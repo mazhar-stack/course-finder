@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #f9fafb);
+  color: #1f2937;
+}
+
+/* App container */
+.app {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* Heading */
+h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #1e40af;
+}
+
+/* Quote */
+.quote {
+  font-style: italic;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+/* Search bar */
+.search-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Course grid */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* Course card */
+.course-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.course-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+/* Mobile styling */
+@media (max-width: 600px) {
+  .app {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+
+  .course-card h3 {
+    font-size: 16px;
+  }
+
+  .course-card p {
+    font-size: 13px;
+  }
+}
